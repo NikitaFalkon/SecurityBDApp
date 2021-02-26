@@ -41,7 +41,7 @@ public class RegistrationController {
 
         return "redirect:/";
     }
-    @GetMapping("/login")
+   @GetMapping("/login")
     public String Log(Model model)
     {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

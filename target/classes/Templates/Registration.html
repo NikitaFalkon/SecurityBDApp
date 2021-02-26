@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +6,6 @@ xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
 </head>
 <body>
 <div>
-     &lt;!&ndash;/*@thymesVar id="userForm" type=""*/&ndash;&gt;
      <form th:method="POST" th:action="@{/registration}" th:object="${userForm}">
     <label for="username">Enter name</label>
     <input type="text" th:field="*{username}"  id="username"/>
@@ -15,10 +13,10 @@ xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
     <label for="password">Enter email</label>
     <input type="text"  th:field="*{password}" id="password"/>
     <br/>
-&lt;!&ndash;    <label for ="passwordconf">Confirm password</label>
+  <!-- <label for ="passwordconf">Confirm password</label>
          <input type="text" th:field="*{passwordConfirm}" id="passwordconf">
     <form:errors path="password"></form:errors>
-         ${passwordError}&ndash;&gt;
+         ${passwordError}&ndash;&gt;-->
     <button type="submit">Create</button>
     </form>
 </div>
